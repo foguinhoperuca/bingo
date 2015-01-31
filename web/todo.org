@@ -1,0 +1,65 @@
+* TODO Environment
+** TODO Grunt
+*** TODO private build
+*** TODO Implement a process to deploy app
+**** TODO grunt-contrib-compress
+***** TODO replace index.html with index.html from htmlmin
+***** DONE compress
+**** TODO grunt-contrib-copy
+***** TODO img
+***** DONE css img (jquery-ui)
+***** DONE data
+***** DONE fonts
+***** DONE requirejs
+**** TODO grunt-jsonmin https://www.npmjs.org/package/grunt-jsonmin
+**** TODO grunt-contrib-imagemin
+**** TODO grunt-contrib-jasmine - https://github.com/gruntjs/grunt-contrib-jasmine
+** TODO Bower
+*** TODO jquery-ui
+** TODO Implement using https://github.com/mozilla/localForage
+** TODO Deploy at https://marketplace.firefox.com/
+** TODO Google chrome
+*** TODO Build template with handlebars
+*** Suport window.localstorage
+**** Support for firebase
+* TODO Function
+** TODO Split app
+*** expenses (gnucash for firefox os)
+*** vehicle (integrate with gnucash)
+*** workout + eating habits (implement in wger and inspiration on KCals.net)
+*** timesheet (integrate with redmine and emacs org mode and other tool for timesheet management)
+** TODO Implement decreto 21404/2014
+*** TODO Upgrade algorythm of extra time
+**** TODO Implement new rule: 30/30
+***** TODO test
+***** DONE Implement
+**** DONE Move actual calc to model or other reusable component
+** TODO [#A] Integrate with wger - https://github.com/rolandgeider/wger
+** TODO Export to QIF
+** TODO Sync
+*** Custom backend
+**** TODO entities
+**** TODO authentication
+**** TODO adapt james client
+** TODO Timesheet
+*** TODO Painel
+*** TODO calc for leaving early
+*** TODO filter by month
+*** TODO use input type time and date
+*** TODO implement official shift
+*** TODO implement status of day ([data registered| verified by employee | verified by employer])
+** TODO Groceries
+** TODO Implement MET calc
+*** [(MET value) x 3.5 x (weight in kg)]/200 = calories burned per minute
+** TODO Configuration
+*** TODO datetime picker
+*** TODO Replace app/js/config.js by app/js/models/configuration
+* TODO Graphic Design
+** TODO Migrate to bootstrap 3
+*** TODO Fix build process (separate fonts, img, lib, etc)
+** TODO create favicon
+** TODO Implement wink button (password field - configurations)
+* TODO BUG
+** fix precision in view/expense/list.js:totalExpended() --> 0.060000000000002274
+* Competition
+** http://kcals.net/
