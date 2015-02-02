@@ -1,11 +1,9 @@
 define([
-	'marionette'
+	'jquery'
+	, 'marionette'
 	, 'underscore'
-	, 'moment'
 	, 'app'
-	, 'views/register'
-	, 'models/setting'
-], function (Marionette, _, Moment, App, RegisterView, SettingModel) {
+], function ($, Marionette, _, App) {
 	var itemView = Marionette.ItemView.extend({
 		template: 'app/templates/bingo/play-item.tpl',
 		tagName: 'tr'
@@ -28,27 +26,27 @@ define([
 		initialize: function(coll) {
 			this.collection = coll;
 
-			console.log(coll);
+			// console.log(coll.toJSON());
 		}
 
-		// , events: {
-		// 	'click .btn-warning': 'sync'
-		// 	, 'click .btn-danger': 'delete'
-		// }
-		// , sync: function(ev) {
-		// 	ev.preventDefault();
-		// 	console.log('clear all not implemented...');
-		// }
-		// , delete: function(ev) {
-		// 	ev.preventDefault();
+		, serializeData: function() {
+			var attrToView = _.clone(this.attributes) || {};
 
-		// 	var self = this;
-		// 	var id = parseInt(ev.currentTarget.getAttribute('id'));
-		// 	App.indexedDB.db.transaction([this.objectStore], 'readwrite').objectStore(this.objectStore).delete(id).onsuccess = function(e) {
-		// 		var model = self.collection.where({id: id});
-		// 		self.collection.remove(model);
-		// 	};
-		// }
+			// FIXME must be dynamic!!
+			attrToView.gift = 'Um rio de oportunidades...';
+			attrToView.secondGift = 'ou um murro na boca!';
+
+			return attrToView;
+		}
+
+		, events: {
+			'click .tdSpeech': 'hit'
+		}
+
+		, hit: function(ev) {
+			ev.preventDefault();
+			$(ev.currentTarget).toggleClass('success');
+		}
 	});
 
 	return CompositeView;

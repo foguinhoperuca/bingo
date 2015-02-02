@@ -1,4 +1,4 @@
-{[
+[
 	{
 		"b": "A bem da verdade..."
 		, "i": "Notificação, advertência e multa!"
@@ -42,10 +42,10 @@
 		, "o": "Throughput"
 	}
 	, {
-		"b": "Negigência, imprudência e imperícia ..."
+		"b": "Negligência, imprudência e imperícia..."
 		, "i": "Tá querendo me fuder?!?"
 		, "n": "Spanning Tree"
 		, "g": "Ataque Direcionado"
 		, "o": "Tendeu?!?"
 	}
-]}
+]

@@ -31,9 +31,19 @@ define([
 			this.register(id, 'bingos', BingoModel, BingoRegisterView);
 		},
 		play: function() {
-			var collection = new BingoCollection();
+			var bingoCard = new BingoCollection();
 
-			App.mainRegion.show(new PlayView(collection));
+			bingoCard.fetch({async: false});
+			App.mainRegion.show(new PlayView(bingoCard));
+			// bingoCard.fetch({
+			// 	success: function(collection, response, options) {
+			// 		// console.log(collection);
+			// 		// console.log(response);
+			// 		// console.log(options);
+
+			// 		App.mainRegion.show(new PlayView(collection));
+			// 	}
+			// });
 		},
 
 		backup: function() {

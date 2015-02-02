@@ -1,15 +1,15 @@
-<td>
+<td class="tdSpeech">
   {{b}}
 </td>
-<td>
+<td class="tdSpeech">
   {{i}}
 </td>
-<td>
+<td class="tdSpeech">
   {{n}}
 </td>
-<td>
+<td class="tdSpeech">
   {{g}}
 </td>
-<td>
+<td class="tdSpeech">
   {{o}}
 </td>
