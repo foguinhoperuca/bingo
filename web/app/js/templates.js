@@ -120,24 +120,8 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
 
 
   buffer += "<td class=\"tdSpeech\">\n  ";
-  if (helper = helpers.b) { stack1 = helper.call(depth0, {hash:{},data:data}); }
-  else { helper = (depth0 && depth0.b); stack1 = typeof helper === functionType ? helper.call(depth0, {hash:{},data:data}) : helper; }
-  buffer += escapeExpression(stack1)
-    + "\n</td>\n<td class=\"tdSpeech\">\n  ";
-  if (helper = helpers.i) { stack1 = helper.call(depth0, {hash:{},data:data}); }
-  else { helper = (depth0 && depth0.i); stack1 = typeof helper === functionType ? helper.call(depth0, {hash:{},data:data}) : helper; }
-  buffer += escapeExpression(stack1)
-    + "\n</td>\n<td class=\"tdSpeech\">\n  ";
-  if (helper = helpers.n) { stack1 = helper.call(depth0, {hash:{},data:data}); }
-  else { helper = (depth0 && depth0.n); stack1 = typeof helper === functionType ? helper.call(depth0, {hash:{},data:data}) : helper; }
-  buffer += escapeExpression(stack1)
-    + "\n</td>\n<td class=\"tdSpeech\">\n  ";
-  if (helper = helpers.g) { stack1 = helper.call(depth0, {hash:{},data:data}); }
-  else { helper = (depth0 && depth0.g); stack1 = typeof helper === functionType ? helper.call(depth0, {hash:{},data:data}) : helper; }
-  buffer += escapeExpression(stack1)
-    + "\n</td>\n<td class=\"tdSpeech\">\n  ";
-  if (helper = helpers.o) { stack1 = helper.call(depth0, {hash:{},data:data}); }
-  else { helper = (depth0 && depth0.o); stack1 = typeof helper === functionType ? helper.call(depth0, {hash:{},data:data}) : helper; }
+  if (helper = helpers.speech) { stack1 = helper.call(depth0, {hash:{},data:data}); }
+  else { helper = (depth0 && depth0.speech); stack1 = typeof helper === functionType ? helper.call(depth0, {hash:{},data:data}) : helper; }
   buffer += escapeExpression(stack1)
     + "\n</td>\n";
   return buffer;
@@ -157,7 +141,7 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
   if (helper = helpers.secondGift) { stack1 = helper.call(depth0, {hash:{},data:data}); }
   else { helper = (depth0 && depth0.secondGift); stack1 = typeof helper === functionType ? helper.call(depth0, {hash:{},data:data}) : helper; }
   buffer += escapeExpression(stack1)
-    + "</small></h1>\n  <table class=\"table table-striped table-bordered table-hover\">\n    <caption>\n	  <strong><em>Aten&ccedil;&atilde;o! N&atilde;o coma broa...</em></strong>\n	</caption>\n	<thead>\n	  <tr>\n		<th>B</th>\n		<th>I</th>\n		<th>N</th>\n		<th>G</th>\n		<th>O</th>\n        <!-- <th>Bingo</th> -->\n        <!-- <th>Divertido</th> -->\n        <!-- <th>do</th> -->\n        <!-- <th>Tio</th> -->\n        <!-- <th>Klarosk</th> -->\n	  </tr>\n	</thead>\n	<tbody id=\"tbodyItem\"></tbody>\n  </table>\n</div>\n<br />\n<span id=\"spanMessage\"></span>\n<!-- <br /> -->\n<!-- <br /> -->\n<!-- <a href=\"#timesheets\" class=\"btn btn-default\"><i class=\"icon-home icon-white\"></i> Go Back!</a> -->\n<!-- <a href=\"#\" id=\"btnPersist\" type=\"submit\" class=\"btn btn-primary\"><i class=\"icon-ok icon-white\"></i> Send</a> -->\n";
+    + "</small></h1>\n  <table class=\"table table-striped table-bordered table-hover\">\n    <caption>\n	  <strong><em>Aten&ccedil;&atilde;o! N&atilde;o coma broa...</em></strong>\n	</caption>\n	<thead>\n	  <tr>\n		<th>B</th>\n		<th>I</th>\n		<th>N</th> \n		<th>G</th>\n		<th>O</th>\n        <!-- <th>Bingo</th> -->\n        <!-- <th>Divertido</th> -->\n        <!-- <th>do</th> -->\n        <!-- <th>Tio</th> -->\n        <!-- <th>Klarosk</th> -->\n	  </tr>\n	</thead>\n    <tbody id=\"tbodyItem\"></tbody>\n  </table>\n</div>\n<br />\n<span id=\"spanMessage\"></span>\n<!-- <br /> -->\n<!-- <br /> -->\n<!-- <a href=\"#timesheets\" class=\"btn btn-default\"><i class=\"icon-home icon-white\"></i> Go Back!</a> -->\n<!-- <a href=\"#\" id=\"btnPersist\" type=\"submit\" class=\"btn btn-primary\"><i class=\"icon-ok icon-white\"></i> Send</a> -->\n";
   return buffer;
   });
 

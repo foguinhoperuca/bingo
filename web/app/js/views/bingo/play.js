@@ -7,15 +7,18 @@ define([
 	var itemView = Marionette.ItemView.extend({
 		template: 'app/templates/bingo/play-item.tpl',
 		tagName: 'tr'
+
+		, serializeData: function() {
+			var attrToView = _.clone(this.attributes) || {};
+
+			// attrToView.speechs = this.collection.toJSON();
+
+console.log(this.model.toJSON());
+// console.log(attrToView);
+			return attrToView;
+		}
 	});
 
-	/*
-	 * Must implement the follow:
-	 * - itemView (tagName and template)
-	 * - template of composite view
-	 * - Must receive a collection in constructor
-	 * - Must define objectStore (string)
-	 */
 	var CompositeView = Marionette.CompositeView.extend({
 		itemView: itemView,
 		template: 'app/templates/bingo/play.tpl',
@@ -35,6 +38,9 @@ define([
 			// FIXME must be dynamic!!
 			attrToView.gift = 'Um rio de oportunidades...';
 			attrToView.secondGift = 'ou um murro na boca!';
+
+			attrToView.speechs = this.collection.toJSON();
+console.log(attrToView);
 
 			return attrToView;
 		}

@@ -8,7 +8,7 @@
 	  <tr>
 		<th>B</th>
 		<th>I</th>
-		<th>N</th>
+		<th>N</th> 
 		<th>G</th>
 		<th>O</th>
         <!-- <th>Bingo</th> -->
@@ -18,7 +18,7 @@
         <!-- <th>Klarosk</th> -->
 	  </tr>
 	</thead>
-	<tbody id="tbodyItem"></tbody>
+    <tbody id="tbodyItem"></tbody>
   </table>
 </div>
 <br />
