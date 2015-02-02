@@ -1,7 +1,7 @@
 {
-	"version": "0.0.12",
-	"name": "JAMES",
-	"description": "JAMES - Your Personal Assistant",
+	"version": "0.0.1",
+	"name": "BINGO",
+	"description": "BINGO - App to generate bingo card and play with your friends! The next big thing in a meeting nearly of you.",
 	"launch_path": "/index.html",
 	"icons": {
 		"128": "/app/img/logo.png"

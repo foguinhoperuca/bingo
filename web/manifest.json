@@ -1,13 +1,13 @@
 {
 	"manifest_version": 2,
-	"name": "James",
-	"version": "0.0.12",
-	"description": "JAMES - Your Personal Assistant",
+	"name": "BINGO",
+	"version": "0.0.1",
+	"description": "BINGO - App to generate bingo card and play with your friends! The next big thing in a meeting nearly of you.",
 	"icons": {
 		"128": "/app/img/logo.png"
 	},
 	"author": "Jefferson Campos",
-	"update_url": "http://ffxos.jeffersoncampos.eti/james",
+	"update_url": "http://ffxos.jeffersoncampos.eti/bingo",
 
 	"app": {
 		"background": {
