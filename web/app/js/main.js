@@ -77,6 +77,7 @@ require([
 	, 'controllers/home'
 	, 'controllers/bingo'
 	, 'views/menu'
+	, 'handlebars_helpers'
 ], function(Backbone, App, HomeController, BingoController, MenuView) {
 	// solve multiple events problem
 	Backbone.View.prototype.close = function () {

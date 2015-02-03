@@ -5,25 +5,14 @@
 	  <strong><em>Aten&ccedil;&atilde;o! N&atilde;o coma broa...</em></strong>
 	</caption>
 	<thead>
-	  <tr>
-		<th>B</th>
-		<th>I</th>
-		<th>N</th> 
-		<th>G</th>
-		<th>O</th>
-        <!-- <th>Bingo</th> -->
-        <!-- <th>Divertido</th> -->
-        <!-- <th>do</th> -->
-        <!-- <th>Tio</th> -->
-        <!-- <th>Klarosk</th> -->
-	  </tr>
+        <tr>
+            <th>Bingo</th>
+            <th>do</th>
+            <th>Klarosk</th>
+	    </tr>
 	</thead>
     <tbody id="tbodyItem">
-        {{foreach speach}}
-        <tr>
-            {{this}}
-        </tr>
-        {{/each}
+        {{printBingoCard row}}
     </tbody>
   </table>
 </div>

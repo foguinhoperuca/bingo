@@ -1,38 +1,45 @@
 define([
-	'backbone'
-], function (Backbone){
-	var Collection = Backbone.Collection.extend({
-		url: 'app/data/klarosk.json'
-		, sizeBingoCard: 3
+		'underscore'
+		, 'backbone'
+], function (_, Backbone){
+		var Collection = Backbone.Collection.extend({
+				url: 'app/data/klarosk.json'
+				, sizeBingoCard: 9
 
-		, initialize: function(args) {
-			
-		}
+				, initialize: function(args) {
+						
+				}
 
-		// FIXME it is hard to work with a list. Think what to do with the data source
-		, parse: function(response) {
-			// console.log(response);
+				// FIXME it is hard to work with a list. Think what to do with the data source
+				, parse: function(response) {
 
-			var row = [],
-				columns = {},
-				i,
-				j
-			;
+// console.log(response);
+// console.log(response.length);
 
-			for (i = 0; i < this.sizeBingoCard; i++) {
-				for (j = 0; j < this.sizeBingoCard; j++)
-					columns[j] = j;
-			
-				row[i] = columns;
-			}
+						var i,
+								seed = new Uint32Array(10),
+								random = [],
+								selected = []
+						;
+						window.crypto.getRandomValues(seed);
+						for (i = 0; i < this.sizeBingoCard; i++)
+								random[i] = seed[i] % 10;
 
-// console.log(response);	
-// console.log(row);
+						for (i = 0; i < this.sizeBingoCard; i++) {
+								selected[i] = response[random[i]];
+								response = _.without(response, response[random[i]]);
+						}
 
-			// return row;
-			return response;
-		}
-	});
+// console.log(seed);
+// console.log(random);
+// console.log(response);
+// console.log(response.length);
+// console.log(selected);
+// console.log(selected.length);
 
-	return Collection;
+						return selected;
+				}
+		});
+
+		return Collection;
 });
