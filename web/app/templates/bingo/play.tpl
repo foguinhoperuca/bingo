@@ -18,7 +18,13 @@
         <!-- <th>Klarosk</th> -->
 	  </tr>
 	</thead>
-    <tbody id="tbodyItem"></tbody>
+    <tbody id="tbodyItem">
+        {{foreach speach}}
+        <tr>
+            {{this}}
+        </tr>
+        {{/each}
+    </tbody>
   </table>
 </div>
 <br />
