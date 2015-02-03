@@ -1,3 +1,3 @@
 <td class="tdSpeech">
-  {{speech}}
+    {{@key}}
 </td>

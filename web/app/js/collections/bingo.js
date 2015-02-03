@@ -9,6 +9,7 @@ define([
 			
 		}
 
+		// FIXME it is hard to work with a list. Think what to do with the data source
 		, parse: function(response) {
 			// console.log(response);
 
@@ -20,12 +21,12 @@ define([
 
 			for (i = 0; i < this.sizeBingoCard; i++) {
 				for (j = 0; j < this.sizeBingoCard; j++)
-					columns[j] = {speech: j};
+					columns[j] = j;
 			
 				row[i] = columns;
 			}
 
-// console.log(response);			
+// console.log(response);	
 // console.log(row);
 
 			// return row;
