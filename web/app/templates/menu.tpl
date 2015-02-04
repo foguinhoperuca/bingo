@@ -16,6 +16,7 @@
 		<li><a href="#backup"><span class="glyphicon glyphicon-floppy-disk"></span></a></li>
 		<li><a href="#settings"><span class="glyphicon glyphicon-wrench"></span></a></li>
       </ul>
+      <div id="divTitle">INITIAL VALUE</div>
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
     <!-- <div class="collapse navbar&#45;collapse" id="bs&#45;example&#45;navbar&#45;collapse&#45;1"> -->

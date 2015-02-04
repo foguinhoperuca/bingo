@@ -9,15 +9,10 @@ define([
 				, initialize: function(args) {
 						
 				}
-
-				// FIXME it is hard to work with a list. Think what to do with the data source
 				, parse: function(response) {
 
-// console.log(response);
-// console.log(response.length);
-
 						var i,
-								seed = new Uint32Array(10),
+								seed = new Uint32Array(this.sizeBingoCard),
 								random = [],
 								selected = []
 						;
@@ -29,13 +24,6 @@ define([
 								selected[i] = response[random[i]];
 								response = _.without(response, response[random[i]]);
 						}
-
-// console.log(seed);
-// console.log(random);
-// console.log(response);
-// console.log(response.length);
-// console.log(selected);
-// console.log(selected.length);
 
 						return selected;
 				}

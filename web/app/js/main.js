@@ -94,5 +94,6 @@ require([
 	// FIXME not working out of box! Need use jquery to trigger url change! :(
 	// Backbone.history.start({ pushState: true });
 
-	App.menuRegion.show(new MenuView());
+	App.menuView = new MenuView();
+	App.menuRegion.show(App.menuView);
 });

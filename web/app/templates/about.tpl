@@ -5,12 +5,11 @@
 </ul>
 
 <div class="tab-content">
-  <div class="tab-pane active" id="expense">
-  <div class="tab-pane" id="bingo">
+  <div class="tab-pane active" id="bingo">
 	<h2>Bingo</h2>
 	<!-- <a href="#bingos" class="btn btn-primary btn-lg btn-block"><span class="glyphicon glyphicon-time"></span> List Bingo</a> -->
 	<!-- <a href="#bingo/new" class="btn btn-success btn-lg btn-block"><span class="glyphicon glyphicon-time"></span> New Bingo</a> -->
-	<a href="#bingo/play" class="btn btn-warning btn-lg btn-block"><span class="glyphicon glyphicon-time"></span> Play</a>
+	<a href="#bingo/play" id="btnPlay" class="btn btn-warning btn-lg btn-block"><span class="glyphicon glyphicon-time"></span> Play</a>
   </div>
   <div class="tab-pane" id="backup">
 	<h2>Backup</h2>
