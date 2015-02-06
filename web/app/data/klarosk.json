@@ -30,7 +30,6 @@
 	{"speech": "Pronto para e condições de"},
 	{"speech": "Throughput"},
 	{"speech": "Negligência, imprudência e imperícia..."},
-	{"speech": "Tá querendo me fuder?!?"},
 	{"speech": "Spanning Tree"},
 	{"speech": "Ataque Direcionado"},
 	{"speech": "Tendeu?!?"},
@@ -39,8 +38,8 @@
 	{"speech": "Belê belê!!"},
 	{"speech": "Tranquilo"},
 	{"speech": "Maravilha"},
-	{"speech": "fechadíssimo"},
-	{"speech": "Posso arancar fora??"},
+	{"speech": "Fechadíssimo"},
+	{"speech": "Posso rancar fora??"},
 	{"speech": "A verdade vós libertará"},
 	{"speech": "Não temos problemas, temos oportunidades"},
 	{"speech": "Sem novidades!"},
@@ -53,5 +52,7 @@
 	{"speech": "Desvista-se..."},
 	{"speech": "Prevaricar"},
 	{"speech": "É de cagar!!"},
-	{"speech": "Agora..."}
+	{"speech": "Agora..."},
+	{"speech": "Tá querendo me fuder?!?"},
+	{"speech": "Eu quero camarão, jantar romântico a luz de veles, flores, champanhe e chocolate"}
 ]
