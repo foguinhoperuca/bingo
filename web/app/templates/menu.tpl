@@ -12,11 +12,10 @@
       <a class="navbar-brand" href="#"><img src="app/img/logo.png" id="logo" width="35px"></img></a>
       <!-- <a class="navbar&#45;brand" href="#"><span class="glyphicon glyphicon&#45;info&#45;sign"></span></a> -->
       <ul class="navbar-nav list-inline">
-		<li><a href="#bingos"><span class="glyphicon glyphicon-time"></span></a></li>
+		<li><a href="#bingo/play"><span class="glyphicon glyphicon-play"></span></a></li>
 		<li><a href="#backup"><span class="glyphicon glyphicon-floppy-disk"></span></a></li>
 		<li><a href="#settings"><span class="glyphicon glyphicon-wrench"></span></a></li>
       </ul>
-      <div id="divTitle">INITIAL VALUE</div>
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
     <!-- <div class="collapse navbar&#45;collapse" id="bs&#45;example&#45;navbar&#45;collapse&#45;1"> -->
