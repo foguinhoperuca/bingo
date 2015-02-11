@@ -30,7 +30,6 @@ node_modules
 #
 # Custom ignored files
 #
-
 web/dist
 web/app/js/libs/bower
 web/app/js/templates.js
