@@ -1,5 +1,8 @@
 <div id="divRegister" class="container">
-    <h1>Prenda: <strong><em>{{gift}} </em></strong><small>{{secondGift}}</small></h1>
+  <h1>Prenda: <strong><em>{{gift}} </em></strong><small>{{secondGift}}</small></h1>
+  <br />
+  <div id="play-clock"></div>
+  <br />
   <table class="table table-striped table-bordered table-hover">
     <caption>
 	  <strong><em>Aten&ccedil;&atilde;o! N&atilde;o coma broa...</em></strong>

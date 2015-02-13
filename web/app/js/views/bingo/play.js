@@ -4,7 +4,8 @@ define([
 		, 'underscore'
 		, 'app'
 		, 'views/menu'
-], function ($, Marionette, _, App, MenuView) {
+		, 'FlipClock'
+], function ($, Marionette, _, App, MenuView, FlipClock) {
 		var itemView = Marionette.ItemView.extend({
 				template: 'app/templates/bingo/play.tpl',
 				className: 'box',
@@ -37,6 +38,14 @@ define([
 						attrToView.row = row;
 
 						return attrToView;
+				}
+
+				, onRender: function() {
+					var flipClock = new FlipClock(this.$el.find('#play-clock'), {
+						autoStart: true,
+						clockFace: 'DailyCounter',
+						countdown: false
+					});
 				}
 
 				, events: {

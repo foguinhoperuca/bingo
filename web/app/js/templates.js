@@ -131,7 +131,7 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
   var buffer = "", stack1, helper, options, functionType="function", escapeExpression=this.escapeExpression, helperMissing=helpers.helperMissing;
 
 
-  buffer += "<div id=\"divRegister\" class=\"container\">\n    <h1>Prenda: <strong><em>";
+  buffer += "<div id=\"divRegister\" class=\"container\">\n  <h1>Prenda: <strong><em>";
   if (helper = helpers.gift) { stack1 = helper.call(depth0, {hash:{},data:data}); }
   else { helper = (depth0 && depth0.gift); stack1 = typeof helper === functionType ? helper.call(depth0, {hash:{},data:data}) : helper; }
   buffer += escapeExpression(stack1)
@@ -139,7 +139,7 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
   if (helper = helpers.secondGift) { stack1 = helper.call(depth0, {hash:{},data:data}); }
   else { helper = (depth0 && depth0.secondGift); stack1 = typeof helper === functionType ? helper.call(depth0, {hash:{},data:data}) : helper; }
   buffer += escapeExpression(stack1)
-    + "</small></h1>\n  <table class=\"table table-striped table-bordered table-hover\">\n    <caption>\n	  <strong><em>Aten&ccedil;&atilde;o! N&atilde;o coma broa...</em></strong>\n	</caption>\n	<thead>\n        <tr>\n            <th>Bingo</th>\n            <th>do</th>\n            <th>Klarosk</th>\n	    </tr>\n	</thead>\n    <tbody id=\"tbodyItem\">\n        "
+    + "</small></h1>\n  <br />\n  <div id=\"play-clock\"></div>\n  <br />\n  <table class=\"table table-striped table-bordered table-hover\">\n    <caption>\n	  <strong><em>Aten&ccedil;&atilde;o! N&atilde;o coma broa...</em></strong>\n	</caption>\n	<thead>\n        <tr>\n            <th>Bingo</th>\n            <th>do</th>\n            <th>Klarosk</th>\n	    </tr>\n	</thead>\n    <tbody id=\"tbodyItem\">\n        "
     + escapeExpression((helper = helpers.printBingoCard || (depth0 && depth0.printBingoCard),options={hash:{},data:data},helper ? helper.call(depth0, (depth0 && depth0.row), options) : helperMissing.call(depth0, "printBingoCard", (depth0 && depth0.row), options)))
     + "\n    </tbody>\n  </table>\n</div>\n<br />\n<span id=\"spanMessage\"></span>\n<!-- <br /> -->\n<!-- <br /> -->\n<!-- <a href=\"#timesheets\" class=\"btn btn-default\"><i class=\"icon-home icon-white\"></i> Go Back!</a> -->\n<!-- <a href=\"#\" id=\"btnPersist\" type=\"submit\" class=\"btn btn-primary\"><i class=\"icon-ok icon-white\"></i> Send</a> -->\n";
   return buffer;

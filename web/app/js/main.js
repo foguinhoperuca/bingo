@@ -15,7 +15,8 @@ require.config({
 		'firebase': 'libs/bower/firebase/firebase',
 		'firebaseSimpleLogin': 'libs/bower/firebase-simple-login/firebase-simple-login',
 		'hideShowPassword': 'libs/bower/hideShowPassword/hideShowPassword.min',
-		'localforage': 'libs/bower/localforage/dist/localforage.min'
+		'localforage': 'libs/bower/localforage/dist/localforage.min',
+		'FlipClock': 'libs/bower/FlipClock/compiled/flipclock.min'
 	},
 	shim: {
 		'jquery': {
@@ -68,6 +69,11 @@ require.config({
 		// 	deps: ['jquery'],
 		// 	exports : 'localforage'
 		// }
+
+		, 'FlipClock': {
+			deps: ['jquery'],
+			exports : 'FlipClock'
+		}
 	}
 });
 
