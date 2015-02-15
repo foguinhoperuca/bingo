@@ -14,15 +14,20 @@ define([
 			var i,
 				seed = new Uint32Array(this.sizeBingoCard),
 				random = [],
-				selected = []
+				selected = [],
+				min = 0,
+				max = response.length - 2 // there is a brackets in the first line and another in the last one.
 			;
 			window.crypto.getRandomValues(seed);
 			for (i = 0; i < this.sizeBingoCard; i++)
-				random[i] = Math.floor(seed[i] * seed.length);
+				random[i] = Math.floor(Math.random() * (max - min + 1)) + min;
+
+			// TODO remove repeated numbers
+console.log(random);
 
 			for (i = 0; i < this.sizeBingoCard; i++) {
 				selected[i] = response[random[i]];
-				response = _.without(response, response[random[i]]);
+				// response = _.without(response, response[random[i]]);
 			}
 
 			return selected;
