@@ -16,19 +16,25 @@ define([
 				random = [],
 				selected = [],
 				min = 0,
-				max = response.length - 2 // there is a brackets in the first line and another in the last one.
+				max = response.length - 2, // there is a brackets in the first line and another in the last one.
+				used,
+				randomNumber,
+				found
 			;
 			window.crypto.getRandomValues(seed);
-			for (i = 0; i < this.sizeBingoCard; i++)
-				random[i] = Math.floor(Math.random() * (max - min + 1)) + min;
-
-			// TODO remove repeated numbers
-console.log(random);
-
 			for (i = 0; i < this.sizeBingoCard; i++) {
-				selected[i] = response[random[i]];
-				// response = _.without(response, response[random[i]]);
+				while (true) {
+					randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+					found = _.find(random, function (num) {
+						return num === randomNumber;
+					});
+					if (!found)
+						break;
+				}
+				random[i] = randomNumber;
 			}
+			for (i = 0; i < this.sizeBingoCard; i++)
+				selected[i] = response[random[i]];
 
 			return selected;
 		}
