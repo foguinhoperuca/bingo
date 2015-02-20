@@ -6,17 +6,19 @@ require.config({
 		'underscore': 'libs/bower/underscore/underscore',
 		'jquery': 'libs/bower/jquery/dist/jquery.min',
 		'backbone': 'libs/bower/backbone/backbone',
-		'bootstrap': 'libs/bower/bootstrap/dist/js/bootstrap.min',
 		'marionette': 'libs/bower/backbone.marionette/lib/backbone.marionette.min',
+		'handlebars': 'libs/bower/handlebars/handlebars.runtime.min',
+		'bootstrap': 'libs/bower/bootstrap/dist/js/bootstrap.min',
 		'epoxy': 'libs/bower/backbone.epoxy/backbone.epoxy.min',
-		'handlebars': 'libs/bower/handlebars/handlebars.min',
 		'jquerymask': 'libs/bower/jQuery-Mask-Plugin/jquery.mask.min',
 		'jqueryui': 'libs/custom/jquery-ui-custom.min',
 		'text': 'libs/bower/requirejs-text/text',
 		'moment': 'libs/bower/moment/min/moment-with-langs.min',
 		'firebase': 'libs/bower/firebase/firebase',
 		'firebaseSimpleLogin': 'libs/bower/firebase-simple-login/firebase-simple-login',
-		'hideShowPassword': 'libs/bower/hideShowPassword/hideShowPassword.min'
+		'hideShowPassword': 'libs/bower/hideShowPassword/hideShowPassword.min',
+		'localforage': 'libs/bower/localforage/dist/localforage.min',
+		'FlipClock': 'libs/bower/FlipClock/compiled/flipclock.min'
 
 		// Test
 		, 'jasmine': '../test/jasmine/lib/jasmine-1.3.0/jasmine'
@@ -24,13 +26,8 @@ require.config({
 		, 'spec': '../test/jasmine/spec'
 	},
 	shim: {
-		// LIBS
 		'jquery': {
 			exports: '$'
-		},
-		'bootstrap': {
-			deps: ['jquery'],
-			exports : 'bootstrap'
 		},
 		'underscore': {
 			exports: '_'
@@ -45,6 +42,10 @@ require.config({
 		},
 		'handlebars': {
 			exports: 'Handlebars'
+		},
+		'bootstrap': {
+			deps: ['jquery'],
+			exports : 'bootstrap'
 		},
 		'epoxy': {
 			deps: ['jquery', 'underscore', 'backbone'],
@@ -71,6 +72,15 @@ require.config({
 			deps: ['jquery'],
 			exports : 'HideShowPassword'
 		}
+		// , 'localforage': {
+		// 	deps: ['jquery'],
+		// 	exports : 'localforage'
+		// }
+
+		, 'FlipClock': {
+			deps: ['jquery'],
+			exports : 'FlipClock'
+		}
 
 		// Test
 		, 'jasmine' : {
@@ -85,13 +95,14 @@ require.config({
 
 require([
 	'jasmine-html'
-	, '../test/jasmine/spec/appSpec'
-	, '../test/jasmine/spec/crudSpec'
-	, '../test/jasmine/spec/expenseSpec'
-	, '../test/jasmine/spec/googleDriveSpec'
-	, '../test/jasmine/spec/motorcycleSpec'
-	, '../test/jasmine/spec/timesheetSpec'
-	, '../test/jasmine/spec/settingsSpec'
+	// , '../test/jasmine/spec/appSpec'
+	// , '../test/jasmine/spec/crudSpec'
+	// , '../test/jasmine/spec/expenseSpec'
+	// , '../test/jasmine/spec/googleDriveSpec'
+	// , '../test/jasmine/spec/motorcycleSpec'
+	// , '../test/jasmine/spec/timesheetSpec'
+	// , '../test/jasmine/spec/settingsSpec'
+	, '../test/jasmine/spec/playSpec'
 ], function(Jasmine) {
     var jasmineEnv = Jasmine.getEnv();
     jasmineEnv.updateInterval = 1000;
