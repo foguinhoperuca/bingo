@@ -96,11 +96,6 @@ require.config({
 require([
 	'jasmine-html'
 	// , '../test/jasmine/spec/appSpec'
-	// , '../test/jasmine/spec/crudSpec'
-	// , '../test/jasmine/spec/expenseSpec'
-	// , '../test/jasmine/spec/googleDriveSpec'
-	// , '../test/jasmine/spec/motorcycleSpec'
-	// , '../test/jasmine/spec/timesheetSpec'
 	// , '../test/jasmine/spec/settingsSpec'
 	, '../test/jasmine/spec/playSpec'
 ], function(Jasmine) {
