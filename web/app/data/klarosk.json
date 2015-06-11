@@ -27,7 +27,7 @@
 	{"speech": "Entre o certo e o errado fique com a verdade"},
 	{"speech": "Tá Fácil"},
 	{"speech": "Dúvidas, angústias, mágoas e incertezas"},
-	{"speech": "Pronto para e condições de"},
+	{"speech": "Pronto para e em condições de"},
 	{"speech": "Throughput"},
 	{"speech": "Negligência, imprudência e imperícia..."},
 	{"speech": "Spanning Tree"},
@@ -65,5 +65,7 @@
 	{"speech": "Fazer de acordo"},
 	{"speech": "SILÊNCIO!"},
 	{"speech": "O problema do analista de sistemas é entender o problema do cliente."},
-	{"speech": "O que é uma ferida a mais pra quem já está leproso?"}
+	{"speech": "O que é uma ferida a mais pra quem já está leproso?"},
+	{"speech": "TKS!"},
+	{"speech": "TKS gigante!!"}
 ]
